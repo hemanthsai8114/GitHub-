@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <div id="myElement" style="width: 200px; height: 100px; background-color: lightblue;">
+    <p>Hover over me!</p>
+  </div>
+
+  <script>
+    const myDiv = document.getElementById("myElement");
+    function handleMouseOver() {
+      myDiv.style.backgroundColor = "lightgreen";
+    }
+    function handleMouseOut() {
+      myDiv.style.backgroundColor = "lightblue";
+    }
+    myDiv.addEventListener("mouseover", handleMouseOver);
+    myDiv.addEventListener("mouseout", handleMouseOut);
+  </script>
+</body>
+</html>
